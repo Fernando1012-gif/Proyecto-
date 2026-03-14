@@ -41,13 +41,10 @@ formulario.addEventListener("submit", (e) => {
         contraseñaInput.focus();
         return;
     }
-
-    // --- SI TODO ES CORRECTO ---
     mostrarExito(rol);
 });
 
 function mostrarExito(rol) {
-    // Creamos el mensaje visual de éxito
     const aviso = document.createElement("div");
     aviso.innerHTML = `<strong>¡Acceso Aceptado!</strong><br>Entrando como ${rol}...`;
     
@@ -68,10 +65,10 @@ function mostrarExito(rol) {
     setTimeout(() => {
         if (rol === "docente") {
             window.location.href = "principal.html"; 
-        } else {
-            // Aquí puedes poner las otras páginas (admin.html, rrhh.html)
-            alert("Redirigiendo a panel de " + rol);
-            window.location.href = "principal.html"; 
+        } else if(rol==="administrador"){
+            window.location.href="";
+        } else if (rol === "RRHH"){
+            window.location.href="";
         }
     }, 2000);
 }

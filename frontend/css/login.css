@@ -14,28 +14,27 @@ body {
 /* --- CONTENEDOR POSICIONADO AL EXTREMO DERECHO --- */
 .main-wrapper.flex-derecha {
     display: flex;
-    align-items: center;      /* Centra verticalmente */
-    justify-content: flex-end; /* Empuja al extremo derecho */
+    align-items: center;      
+    justify-content: flex-end;
     height: 100vh;
-    padding-right: 3%;        /* Reducido para estar "un poco más a la derecha" */
+    padding-right: 3%;      
     width: 100%;
 }
 
 /* --- TARJETA DE LOGIN --- */
 #loginsection.container {
     width: 100%;
-    max-width: 400px;         /* Ligeramente más esbelta */
+    max-width: 400px;       
     padding: 2.5rem;
     background: rgba(255, 255, 255, 0.94); 
     border-radius: 12px;
     
     /* Diseño Institucional */
-    border-right: 10px solid #9f2626; /* Guinda resaltado a la derecha */
-    border-left: 1px solid #1b5e20;   /* Verde sutil */
+    border-right: 10px solid #9f2626; 
+    border-left: 1px solid #1b5e20;   
     border-top: 1px solid #1b5e20;
     border-bottom: 1px solid #1b5e20;
     
-    /* Sombra proyectada hacia la izquierda para dar peso visual */
     box-shadow: -15px 0px 30px rgba(0, 0, 0, 0.3); 
 }
 
@@ -86,5 +85,5 @@ body {
 }
 
 .submit-btn:hover {
-    background-color: #1b5e20; /* Cambio a Verde Institucional */
+    background-color: #1b5e20; 
 }
